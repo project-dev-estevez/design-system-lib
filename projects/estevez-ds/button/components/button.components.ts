@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-button',
+  selector: 'eds-button',
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent {
-
-}
+export class ButtonComponent { }
