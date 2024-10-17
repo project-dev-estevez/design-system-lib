@@ -1,1 +1,73 @@
-<eds-button>Presioname</eds-button>
+<h1 class="center-text">Boton</h1>
+
+<div class="card">
+  <div class="card-content">
+    <div class="left-column">
+      <eds-button [color]="buttonColor" [disabled]="isDisabled">Presioname</eds-button>
+    </div>
+    <div class="right-column">
+      <div>
+        <label for="color-select">State:</label>
+        <label>
+          <input type="radio" name="state" (change)="setDisabled(false)" [checked]="!isDisabled"> Enable
+        </label>
+        <label>
+          <input type="radio" name="state" (change)="setDisabled(true)" [checked]="isDisabled"> Disable
+        </label>
+      </div>
+      <div>
+        <label for="color-select">Color:</label>
+        <select id="color-select" (change)="setColor($event)">
+            <option value="neutral">Neutral</option>
+            <option value="primary">Primary</option>
+            <option value="secondary">Secondary</option>            
+            <option value="success">Success</option>
+            <option value="warning">Warning</option>
+            <option value="danger">Danger</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fragmento de código HTML -->
+<div class="code-snippet">
+  <pre>
+    <code>{{ buttonCodeSnippet }}</code>
+  </pre>
+</div>
+
+<hr>
+
+<h1 class="center-text">Dropdown</h1>
+
+<!-- <div class="card">
+  <div class="card-content">
+    <div class="left-column">
+      <eds-button [color]="buttonColor" [disabled]="isDisabled">Presioname</eds-button>
+    </div>
+    <div class="right-column">
+      <div>
+        <label>
+          <input type="radio" name="state" (change)="setDisabled(false)" [checked]="!isDisabled"> Enable
+        </label>
+        <label>
+          <input type="radio" name="state" (change)="setDisabled(true)" [checked]="isDisabled"> Disable
+        </label>
+      </div>
+      <div>
+        <label for="color-select">Color:</label>
+        <select id="color-select" (change)="setColor($event)">
+          <option value="primary">Primary</option>
+          <option value="secondary">Secondary</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="code-snippet">
+  <pre>
+    <code>{{ buttonCodeSnippet }}</code>
+  </pre>
+</div> -->

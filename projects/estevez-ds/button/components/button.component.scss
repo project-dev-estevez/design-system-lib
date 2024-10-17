@@ -1,0 +1,78 @@
+@import '../../global-styles.scss';
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  min-height: 30px;
+  min-width: 126px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.neutral {
+    background-color: $color-neutral;
+    color: white;
+
+    &:hover {
+      background-color: $color-neutral-hover;
+    }
+  }
+
+  &.primary {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+    color: white;
+
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+  }
+
+  &.success {
+    background-color: $color-success;
+    color: white;
+
+    &:hover {
+      background-color: $color-success-hover;
+    }
+  }
+
+  &.warning {
+    background-color: $color-warning;
+    color: white;
+
+    &:hover {
+      background-color: $color-warning-hover;
+    }
+  }
+
+  &.danger {
+    background-color: $color-danger;
+    color: white;
+
+    &:hover {
+      background-color: $color-danger-hover;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $color-disabled; // Mantener el color al hacer hover
+    }
+  }
+}
