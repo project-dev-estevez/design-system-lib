@@ -32,4 +32,8 @@ export class AppComponent {
   generateButtonCodeSnippet(): string {
     return `<eds-button [color]="${this.buttonColor}" [disabled]="${this.isDisabled}">Presioname</eds-button>`;
   }
+
+
+
+
 }
